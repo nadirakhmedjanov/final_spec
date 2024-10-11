@@ -1,0 +1,15 @@
+    1  cat > Pets.txt << EOF
+Собаки
+Кошки
+Хомяки
+EOF
+    2  cat > Packs.txt << EOF
+Лошади
+Верблюды
+Ослы
+EOF
+    3  cat Pets.txt Packs.txt > Human_Friends.txt
+    4  cat Human_Friends.txt
+    5  mkdir Files
+    6  mv Human_Friends.txt Files/
+  
