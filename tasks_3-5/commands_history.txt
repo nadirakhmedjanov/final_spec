@@ -1,0 +1,26 @@
+  1  cat > Pets.txt << EOF
+Собаки
+Кошки
+Хомяки
+EOF
+    2  cat > Packs.txt << EOF
+Лошади
+Верблюды
+Ослы
+EOF
+    3  cat Pets.txt Packs.txt > Human_Friends.txt
+    4  cat Human_Friends.txt
+    5  mkdir Files
+    6  mv Human_Friends.txt Files/
+    7  sudo apt update
+    8  sudo apt install software-properties-common
+    9  sudo add-apt-repository 'deb http://repo.mysql.com/apt/ubuntu/ focal mysql-8.0'
+   10  sudo apt update
+   11  sudo apt install mysql-server
+   12  sudo apt install mysql-client
+   13  sudo apt-get install curl
+   14  dpkg -l | grep curl
+   15  sudo dpkg -r curl
+   16  sudo dpkg -P curl
+   17  dpkg -l | grep curl
+   18  history > commands_history.txt
