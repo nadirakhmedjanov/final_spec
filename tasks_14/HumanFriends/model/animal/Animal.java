@@ -1,4 +1,4 @@
-package HumanFriends.model.animal;
+package model.animal;
 
 import java.io.Serializable;
 import java.time.LocalDate;

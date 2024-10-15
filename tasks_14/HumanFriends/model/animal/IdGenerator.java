@@ -1,11 +1,11 @@
-package HumanFriends.model.animal;
+package model.animal;
 
 import model.writer.FileHandler;
 
 import java.io.Serializable;
 
 public class IdGenerator implements Serializable {
-    private String path = "HumanFriends/model/writer/serialized_files/id_generator.ser";
+    private String path = "src/model/writer/serialized_files/id_generator.ser";
     private transient FileHandler fileHandler;
     private int currentId;
 

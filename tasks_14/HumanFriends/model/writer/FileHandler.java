@@ -1,4 +1,4 @@
-package HumanFriends.model.writer;
+package model.writer;
 
 import java.io.*;
 
