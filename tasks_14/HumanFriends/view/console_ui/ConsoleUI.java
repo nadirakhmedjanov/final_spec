@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleUI implements View {
-    private String path = "src/model/writer/serialized_files/animal_registry.ser";
+    private String path = "model/writer/animal_registry.ser";
     private List<String> animalTypes;
     private MenuHandler menuHandler;
     private Presenter presenter;
@@ -32,7 +32,7 @@ public class ConsoleUI implements View {
     }
 
     private void greetings() {
-        System.out.println("Welcome to the Animals' Registry program!");
+        System.out.println("Начинаем работу с базой животных");
     }
 
     private void selectItemFromMenu() {
@@ -49,7 +49,7 @@ public class ConsoleUI implements View {
     }
 
     public void createAnimal() {
-        System.out.println("Please choose the animal you want to create:");
+        System.out.println("Выберите пожалуйста вид животного для создания ");
         for (String animalType : animalTypes) {
             System.out.println("• " + animalType);
         }
@@ -78,7 +78,7 @@ public class ConsoleUI implements View {
                 createDonkey(name, birthDate);
                 break;
             default:
-                System.out.println("Unknown animal type.");
+                System.out.println("Неизвестный вид животного.");
         }
     }
 
